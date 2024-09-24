@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experiences</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #06234a;
+            color: #d0d2ff;      
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #363952;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            width: 100%;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li a {
+            color: #d0d2ff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .nav-links li a:hover {
+            color: #FFC107; 
+            text-decoration: underline;
+        }
+        .active {
+            border-bottom: 2px solid #fff; 
+            font-weight: bold; 
+        }
+        .dropdown {
+            display: none; 
+            position: absolute;
+            background-color: #444; 
+            min-width: 160px; 
+            z-index: 1;
+            border-radius: 4px;          
+        }
+        .nav-links li:hover .dropdown {
+            display: block; 
+        }
+        .dropdown a {
+            display: block; 
+            padding: 0.5rem 1rem; 
+        }
+        .dropdown a:hover {
+            background-color: #FFC107; 
+            color: #FFFFFF; 
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                display: none;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+        }
+        .words {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 25px;
+            margin: 80px;
+            text-align: left;  
+            line-height: 1.5; 
+        }
+        .img {
+            display: block;           
+            margin: 100px auto; 
+            max-width: 100%; 
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #363952;
+            color: #d0d2ff;
+            margin-top: auto; 
+            width: 100%;
+        }
+        ol {
+            font-size: 28px; 
+            margin-bottom: 20px;    
+        }
+        ul {
+            font-size: 20px; 
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Home.html">Home</a></li>
+            <li>
+                <a href="#">About Me</a>
+                <div class="dropdown">
+                    <a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Personality.html">My Personality</a>
+                    <a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/MyExperiences.html">My Experiences</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Personal%20Development.html">Personal Development</a></li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Storyboard.html">Storyboard</a></li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Reference.html">References</a></li>
+        </ul>
+    </nav>
+
+    <img src="../Assets/Resume.jpg" alt="Display of my resume" height="1200" width="1000" class="img">
+
+    <div class="words">
+        <h2><u>Vision Statement</u></h2>
+        <p>"To be a driving force in computer science, using my skills and teamwork to create solutions that make a real difference. I envision a future where technology improves lives, and I’m dedicated to learning and growing to help shape that future."</p>
+
+        <h2><u>Mission Statement</u></h2>
+        <p>"My mission is to actively engage in learning and applying advanced computer science principles and technologies, whether through collaborating with peers or self to solve real-world problems. I strive to continuously develop myself so that I have a firm knowledge in problem solving regardless of computing language."</p>
+    </div>
+
+    <div class="words">
+        <h2>Aspiring Professions & Requirements</h2>
+
+        <h3>Cybersecurity Job Requirements</h3>
+        <ol>
+            <li>Technical Skills:
+                <ul>
+                    <li>Proficiency in networking concepts (TCP/IP, DNS, VPN).</li>
+                    <li>Knowledge of security protocols (SSL/TLS, IPsec).</li>
+                    <li>Familiarity with security tools (firewalls, intrusion detection systems, SIEM).</li>
+                    <li>Experience with scripting languages (Python, Bash) for automation.</li>
+                </ul>
+            </li>
+            <li>Certifications:
+                <ul>
+                    <li>Relevant certifications (e.g., CompTIA Security+, CISSP, CEH).</li>
+                </ul>
+            </li>
+            <li>Understanding of Security Frameworks:
+                <ul>
+                    <li>Familiarity with frameworks such as NIST, ISO 27001, or OWASP.</li>
+                </ul>
+            </li>
+            <li>Incident Response Skills:
+                <ul>
+                    <li>Experience in incident detection, analysis, and response.</li>
+                </ul>
+            </li>
+            <li>Risk Assessment:
+                <ul>
+                    <li>Ability to conduct vulnerability assessments and penetration testing.</li>
+                </ul>
+            </li>
+            <li>Soft Skills:
+                <ul>
+                    <li>Strong analytical and problem-solving skills.</li>
+                    <li>Good communication skills for conveying security concepts to non-technical stakeholders.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

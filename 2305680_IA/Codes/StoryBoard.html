@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #06234a;
+            color: #d0d2ff;      
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #363952;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            width: 100%;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li a {
+            color: #d0d2ff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .nav-links li a:hover {
+            color: #FFC107; 
+            text-decoration: underline;
+        }
+        .dropdown {
+            display: none; 
+            position: absolute;
+            background-color: #444; 
+            min-width: 160px; 
+            z-index: 1;
+            border-radius: 4px;          
+        }
+        .nav-links li:hover .dropdown {
+            display: block; 
+        }
+        .dropdown a {
+            display: block; 
+            padding: 0.5rem 1rem; 
+        }
+        .dropdown a:hover {
+            background-color: #FFC107; 
+            color: #FFFFFF; 
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                display: none;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+        }
+
+        .worda {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 25px;
+            margin: 80px;
+            text-align: center; 
+            line-height: 1.5; 
+        }
+
+        .wordb {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 25px;
+            margin: 80px;
+            text-align: left; 
+            line-height: 1.5; 
+        }
+
+        ol {
+            margin: 0 80px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 5px 0; 
+            font-family: 'Bebas Neue', sans-serif; 
+        }
+
+        h3 {
+            margin: 0;
+            color: #FFC107; 
+        }
+
+        .theme-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .theme-square {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #fff; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #363952;
+            color: #d0d2ff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        ul {
+            margin: 5px 80px; 
+            padding-left: 20px;
+            list-style-type: disc; 
+        }
+        
+       .wordc {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 25px;
+            margin: 80px;
+            text-align: center; 
+            line-height: 1.5; 
+            color: #FFC107;
+        }
+
+
+        .final-heading {
+            margin: 10px 80px 5px; 
+            font-size: 25px;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Home.html">Home</a></li>
+            <li>
+                <a href="#">About Me</a>
+                <div class="dropdown">
+                    <a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Personality.html">My Personality</a>
+                    <a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/MyExperiences.html">My Experiences</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Personal%20Development.html">Personal Development</a></li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Storyboard.html">Storyboard</a></li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Reference.html">References</a></li>
+        </ul>
+    </nav>
+
+    <div class="worda"> 
+        <h1><u>Sketched Wireframe</u></h1> 
+    </div>
+
+    <center>
+        <a href="../Assets/Scanned Documents.pdf"> 
+            <img src="../Assets/wirefram.jpg" alt="Picture of Wireframe" height="400" width="400"> 
+        </a>
+    </center>
+
+    <br><br>
+    
+    <div class="wordb">
+        <h2><u>Web Pages and Their Purposes</u></h2>
+        <ol>
+            <li><h3>Index</h3> Provides a brief overview of content</li>
+            <li><h3>Personality</h3> Contains information about personal characteristics</li>
+            <li><h3>Professional</h3> Current work experiences and future aspirations</li>
+            <li><h3>Storyboard</h3> Contains basic site information regarding style and design</li>
+            <li><h3>References</h3> List of cited resources</li>
+        </ol>
+    </div>
+
+    <br><br>
+    <div class="wordb"> <h2><u>Website Theme</u></h2> </div>
+    <div class="theme-container">
+        <div class="theme-square" style="background-color: #06234a;"></div>
+        <div class="theme-square" style="background-color: #363952;"></div>
+        <div class="theme-square" style="background-color: #d0d2ff;"></div>
+        <div class="theme-square" style="background-color: #FFC107;"></div>
+    </div>
+
+    <br><br>
+    <div class="final-heading"><u><h2>Website Features</h2></u></div>
+    <ul>
+        <li>Lists (Ordered and Unordered)</li>
+        <li>Buttons</li>
+        <li>Interactive JPG</li>
+        <li>Links</li>
+    </ul>
+
+<br><br><br>
+<a href="https://tiiny.host"><center><div class="wordc">Free Hosting Link</center></div></a>
+
+    <footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

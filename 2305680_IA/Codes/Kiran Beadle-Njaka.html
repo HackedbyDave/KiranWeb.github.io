@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #06234a;
+            color: #d0d2ff;      
+   }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #363952;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            width: 100;
+        }
+       .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li a {
+            color: #d0d2ff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .nav-links li a:hover {
+            color: #FFC107; 
+            text-decoration: underline;         }
+        .active {
+            border-bottom: 2px solid #fff; 
+            font-weight: bold; 
+        }
+        .dropdown {
+            display: none; 
+            position: absolute;
+            background-color: #444; 
+            min-width: 160px; 
+            z-index: 1;
+            border-radius: 4px;          
+        }
+
+        .nav-links li:hover .dropdown {
+            display: block; 
+        }
+
+        .dropdown a {
+            display: block; 
+            padding: 0.5rem 1rem; 
+            
+             
+        }
+        .dropdown a:hover {
+            background-color: #FFC107; 
+            color: #FFFFFF; 
+
+        
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                display: none;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+        }
+        .intro {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 90px;
+            margin: 200px 290px 0; 
+        }
+
+        img {
+            display: inline;           
+            margin: -600px 870px 100px;
+            max-width: 100%; 
+        
+            border-radius: 10%;
+            
+       }
+
+       footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #363952;
+            color: #d0d2ff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+       
+
+    </style>
+
+</head>
+
+<body>
+      <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/MyExperiences.html">Home</a></li>
+            <li>
+                <a href="#">About Me</a>
+                <div class="dropdown">
+                    <a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Personality.html">My Personality</a>
+                    <a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/MyExperiences.html">My Experiences</a>
+                </div>
+            </li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Personal%20Development.html">Personal Development</a></li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/StoryBoard.html">Storyboard</a></li>
+            <li><a href="file:///C:/Users/beadl/OneDrive/Desktop/2305680_IA/Codes/Reference.html">References</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro">
+        <p>Hi, meet Dave! <br>Wait sorry <br> I mean Kiran <br> Beadle- Njaka.</p>
+    </div>
+
+<a href="mailto:email@example.com?subject=ID:2305680"> <img src="../Assets/IMG_5689.jpeg" alt="image here" height="460" width="335"> </a>
+
+
+
+<footer>
+        <p>&copy; 2024 All Rights Reserved</p>
+    </footer>
+
+
+</body>
+</html>
